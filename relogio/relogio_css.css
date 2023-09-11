@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.area{
+    width: 100vw;
+    height: 100vh;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.area01{
+    width: 87.5vw;
+    height: 87.5vh;
+    background: rgb(233, 233, 233);
+    border: #fff 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.area02{
+    width: 75vw;
+    height: 75vh;
+    background: #333;
+    border: #fff 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.area03{
+    width: 62.5vw;
+    height: 62.5vh;
+    background: rgb(233, 233, 233);
+    border: #fff 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.area04{
+    width: 50vw;
+    height: 50vh;
+    background: #333;
+    border: #fff 1px solid;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rl{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: gold;
+    border: #fff 1px solid;
+    border-radius: 10px;
+    padding: 2%;
+    color: #333;
+    font-size: 2.5rem;
+    font-family: relogio;
+    text-shadow: 1px 0 #fff;
+    letter-spacing: 5px;
+}
+@font-face{
+    font-family: relogio;
+    src: url(digital-7\ \(mono\ italic\).ttf);
+}
