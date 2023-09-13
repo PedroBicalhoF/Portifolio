@@ -266,3 +266,42 @@ footer img{
         transform: translateY(30%);
     }
 }
+@media (max-width: 500px) {
+    header{
+        position: fixed;
+        width: 98vw;
+        height: 5.625rem;
+        padding: 8px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header h1{
+        font-size: .8rem;
+    }
+    header a{
+        font-size: .8rem;
+    }
+    .container{
+        width: 98vw;
+    }
+    #pj{
+        width: 98vw;
+    }
+    .projetos{
+        background: #000;
+        width: 98vw;
+        height: 44vh;
+        background: #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow-x: scroll;
+    }
+    .projetos section:first-child{
+        margin-left: 15vw;
+    }
+    .projetos section{
+        border: gold 1px solid;
+    }
+}
