@@ -7,7 +7,7 @@
     src: url(digital-7\ \(mono\ italic\).ttf);
 }
 body{
-    background: black;
+    background: #000;
 }
 
 div{
@@ -15,9 +15,8 @@ div{
     height: 400px;
     margin: auto;
     margin-top: 15%;
-    border: 1px #000000 solid;
+    border: 1px #fff solid;
     border-radius: 10px;
-    background: #7474ce;
     text-align: center;
 }
 
@@ -26,6 +25,7 @@ h1{
     letter-spacing: 5px;
     font-size: 3.5rem;
     font-family: crono;
+    color: #65b307;
 }
 
 button{
@@ -35,22 +35,22 @@ button{
     font-family: crono;
     font-size: 1.5rem;
     cursor: pointer;
-    box-shadow: 2px 2px 20px #333;
+    border: #fff 1px solid;
 }
 button:hover{
-    transition: 0.5s;
-    transform: translateY(-10px);
+    transition: 0.1s;
+    color: #fff;
     background: #00000000;
 }
 
 .i{
-    background-color: darkseagreen;
+    background-color: #65b307;
 }
 
 .p{
-    background-color: darkgray;
+    background-color: #bfbfbf;
 }
 
 .z{
-    background-color: chocolate;
+    background-color: coral;
 }
