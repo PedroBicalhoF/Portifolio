@@ -296,7 +296,6 @@ footer img{
         display: flex;
         justify-content: center;
         align-items: center;
-        overflow-x: scroll;
     }
     .projetos section:first-child{
         margin-left: 15vw;
