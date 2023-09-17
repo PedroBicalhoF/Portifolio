@@ -297,9 +297,6 @@ footer img{
         justify-content: center;
         align-items: center;
     }
-    .projetos section:first-child{
-        margin-left: 15vw;
-    }
     .projetos section{
         border: gold 1px solid;
     }
