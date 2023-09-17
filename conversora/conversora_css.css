@@ -28,14 +28,14 @@ a{
     padding: 0px;
 }
 input { 
-    width: 255px;
-    height: 20px;
-    margin: .7rem;
-    margin-left: 80px;
-    margin-right: 80px;
-    font-size: 25px;
+    width: 204px;
+    height: 16px;
+    margin: .5rem;
+    margin-left: 64px;
+    margin-right: 64px;
+    font-size: 20px;
     text-align: center;
-    padding: 5px;
+    padding: 4px;
 }
 button:disabled{
     background: #000;
@@ -47,9 +47,9 @@ select option{
     text-align: center;
 }
 #bt{
-    width: 130px;
+    width: 104px;
     border: #FFF 1px solid;
-    transform: translateY(10px);
+    transform: translateY(8px);
 }
 #EntradaPr{
     background-color: #fff;
@@ -57,15 +57,14 @@ select option{
 table{
     display: flex;
     justify-content: space-around;
-    margin: 20px;
+    margin: 16px;
     color: #fff;
 }
 table button {
-    width: 65px;
-    height: 65px;
-    font-size: 25px;
+    width: 52px;
+    height: 52px;
+    font-size: 20px;
     cursor: pointer;
-    margin: 0px;
     background: #000;
     color: #fff;
     border: none;
