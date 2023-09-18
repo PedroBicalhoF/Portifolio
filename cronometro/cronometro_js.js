@@ -27,10 +27,11 @@ function inicio(){
 }
 function pausar(){
     clearInterval(iniciar);
-    botao.disabled = True;
+    botao.disabled = true;
 }
 function zerar(){
     clearInterval(iniciar)
+    botao.disabled = false;
     ml = 0
     ss = 0
     mm = 0
