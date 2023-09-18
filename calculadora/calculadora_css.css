@@ -12,7 +12,7 @@ ins:nth-child(1) {
 }
 
 .fundo{
-    background:  #bfbfbf;
+    background:  #515151;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -24,7 +24,7 @@ ins:nth-child(1) {
 
 .Calculadora {
     position: absolute;
-    background: #0b5d70;
+    background: #000;
     border: #FFF 1px solid;
     border-radius: 15px;
     padding: 45px;
@@ -36,16 +36,15 @@ ins:nth-child(1) {
     font-size: 25px;
     cursor: pointer;
     margin: 3px;
-    background-color: #1379b2;
+    background: #fff;
     border-top: 2px solid #FFF;
     border-left: 2px solid #FFF;
-    color: #FFF;
+    color: #000;
 }
 
 .botao:hover {
-    background-color: #105f8d;
+    background-color: olivedrab;
     transition: 0.1s;
-    transform: translateY(-5px);
 }
 
 #Resultado {
