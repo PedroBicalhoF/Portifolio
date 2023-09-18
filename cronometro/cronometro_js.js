@@ -1,12 +1,12 @@
-
 rl = document.getElementsByTagName('h1')[0];
 var iniciar;
 botao = document.getElementsByTagName('button')[0];
 ml = 0
 ss = 0
-mm = 0 
+mm = 0
 hr = 0
 function inicio(){
+    botao.disabled = true;
     iniciar = setInterval(relogio,100)
 }
     function relogio(){
@@ -27,14 +27,16 @@ function inicio(){
 }
 function pausar(){
     clearInterval(iniciar);
-    botao.disabled = true;
+    botao.innerHTML = 'Continuar';
+    botao.disabled = false;
 }
 function zerar(){
     clearInterval(iniciar)
-    botao.disabled = false;
+    rl.innerHTML = "0:00:00:00";
     ml = 0
     ss = 0
     mm = 0
     hr = 0
-    rl.innerHTML = "0:00:00:00"
+    botao.innerHTML = 'Iniciar';
+    botao.disabled = false;
 }
