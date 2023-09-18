@@ -1,9 +1,10 @@
 
 rl = document.getElementsByTagName('h1')[0];
 var iniciar;
+botao = document.getElementsByTagName('button')[0];
 ml = 0
 ss = 0
-mm = 0
+mm = 0 
 hr = 0
 function inicio(){
     iniciar = setInterval(relogio,100)
@@ -25,7 +26,8 @@ function inicio(){
     rl.innerHTML = hr+':'+(mm<10?'0'+mm+':':mm+':')+(ss<10?'0'+ss+':':ss+':')+(ml<10?'0'+ml:ml)
 }
 function pausar(){
-    clearInterval(iniciar)
+    clearInterval(iniciar);
+    botao.disabled = True;
 }
 function zerar(){
     clearInterval(iniciar)
