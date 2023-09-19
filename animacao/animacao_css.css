@@ -3,69 +3,69 @@ body{
 }
 .area{
     width: 50.8vw;
-    height: 72.2vh;
+    height: 50.8vw;
     border: #fff 1px solid;
     border-radius: 10px;
     transform: translateX(50%) translateY(20%);
 }
 .n1{
     width: 15.6vw;
-    height: 22.2vh;
+    height: 15.6vw;
     border: #fff 1px solid;
     border-radius: 10px;
     box-shadow: -10px 5px 5px white;
     animation: n1 5s infinite;
-    transform: translateX(0vw) translateY(0vh);
+    transform: translateX(0vw) translateY(0vw);
 }
 @keyframes n1{
-    25%{transform: translateX(35.1vw) translateY(0vh);box-shadow: -10px 5px 5px #fff;}
-    50%{transform: translateX(35.1vw) translateY(50vh);box-shadow: -10px -5px 5px #fff;}
-    75%{transform: translateX(0vh) translateY(50vh);box-shadow: 10px -5px 5px #fff;}
-    100%{transform: translateX(0vh) translateY(0vh);box-shadow: 10px 5px 5px #fff;}
+    25%{transform: translateX(35.1vw) translateY(0vw);box-shadow: -10px 5px 5px #fff;}
+    50%{transform: translateX(35.1vw) translateY(35.1vw);box-shadow: -10px -5px 5px #fff;}
+    75%{transform: translateX(0vw) translateY(35.1vw);box-shadow: 10px -5px 5px #fff;}
+    100%{transform: translateX(0vw) translateY(0vw);box-shadow: 10px 5px 5px #fff;}
 }
 .n2{
     width: 15.6vw;
-    height: 22.2vh;
+    height: 15.6vw;
     border: #fff 1px solid;
     border-radius: 10px;
     box-shadow: -10px 5px 5px white;
     display: inline-block;
-    transform: translateX(35.1vw) translateY(-22.5vh);
+    transform: translateX(35.1vw) translateY(-15.6vw);
     animation: n2 5s infinite;
 }
 @keyframes n2{
-    25%{transform: translateX(35.1vw) translateY(27.4vh);box-shadow: -10px -5px 5px #fff;}
-    50%{transform: translateX(0vw) translateY(27.4vh);box-shadow: 10px -5px 5px #fff;}
-    75%{transform: translateX(0vw) translateY(-22.5vh);box-shadow: 10px 5px 5px #fff;}
-    100%{transform: translateX(35.1vw) translateY(-22.5vh);box-shadow: -10px 5px 5px #fff;}
+    25%{transform: translateX(35.1vw) translateY(19.2vw);box-shadow: -10px -5px 5px #fff;}
+    50%{transform: translateX(0vw) translateY(19.2vw);box-shadow: 10px -5px 5px #fff;}
+    75%{transform: translateX(0vw) translateY(-15.6vw);box-shadow: 10px 5px 5px #fff;}
+    100%{transform: translateX(35.1vw) translateY(-15.6vw);box-shadow: -10px 5px 5px #fff;}
 }
 .n3{
     width: 15.6vw;
-    height: 22.2vh;
+    height: 15.6vw;
     border: #fff 1px solid;
     border-radius: 10px;
     box-shadow: 10px -5px 5px white;
-    transform: translateX(0vw) translateY(4.6vh);
+    transform: translateX(0vw) translateY(3.2vw);
     animation: n3 5s infinite;
 }
 @keyframes n3{
-    25%{transform: translateX(0vw) translateY(-45vh);box-shadow: 10px 5px 5px #fff;}
-    50%{transform: translateX(35vw) translateY(-45vh);box-shadow: -10px 5px 5px #fff;}
-    75%{transform: translateX(35vw) translateY(4.6vh);box-shadow: -10px -5px 5px #fff;}
-    100%{transform: translateX(0vw) translateY(4.6vh);box-shadow: 10px -5px 5px #fff;}
+    25%{transform: translateX(0vw) translateY(-31.6vw);box-shadow: 10px 5px 5px #fff;}
+    50%{transform: translateX(35vw) translateY(-31.6vw);box-shadow: -10px 5px 5px #fff;}
+    75%{transform: translateX(35vw) translateY(3.2vw);box-shadow: -10px -5px 5px #fff;}
+    100%{transform: translateX(0vw) translateY(3.2vw);box-shadow: 10px -5px 5px #fff;}
 }
 .n4{
     width: 15.6vw;
-    height: 22.2vh;
+    height: 15.6vw;
     border: #fff 1px solid;
     border-radius: 10px;
     box-shadow: -10px -5px 5px white;
-    transform: translateX(35.1vw) translateY(-17.9vh);
+    transform: translateX(35.1vw) translateY(-12.6vw);
     animation: n4 5s infinite;
 }
 @keyframes n4{
-    25%{transform: translateX(0vw) translateY(-17.9vh);box-shadow: 10px -5px 5px #fff;}
-    50%{transform: translateX(0vw) translateY(-67.5vh);box-shadow: 10px 5px 5px #fff;}
-    75%{transform: translateX(35.1vw) translateY(-67.5vh);box-shadow: -10px 5px 5px #fff;}
-    100%{transform: translateX(35.1vw) translateY(-17.9vh);box-shadow: -10px -5px 5px #fff;}
+    25%{transform: translateX(0vw) translateY(-12.6vw);box-shadow: 10px -5px 5px #fff;}
+    50%{transform: translateX(0vw) translateY(-47.4vw);box-shadow: 10px 5px 5px #fff;}
+    75%{transform: translateX(35.1vw) translateY(-47.4vw);box-shadow: -10px 5px 5px #fff;}
+    100%{transform: translateX(35.1vw) translateY(-12.6vw);box-shadow: -10px -5px 5px #fff;}
 }
