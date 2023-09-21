@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>criptografia</title>
+</head>
+<body>
+    <div class="area">
+        <input type='password' id='entrada' placeholder='Entrada'>
+        <input type='text' id='resultado' placeholder='Resultado' disabled="true">
+        
+        <button onclick='Calcular()' id="bt1">Calcular</button>
+        <button onclick='revelar()'id='bt2'>Revelar</button>
+        
+        <div class="alfabeto">
+            <h1 id="abc"></h1>
+            <h3 id="chave"></h3>
+            <h1 id="cripto"></h1>
+        </div>
+        <br>
+        <p>Senha: criptografia</p>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

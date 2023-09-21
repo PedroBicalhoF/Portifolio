@@ -1,0 +1,51 @@
+body{
+    background: #333;
+    background-size: contain;
+}
+.area{
+    position: absolute;
+    top: 30vh;
+    left: 30vw;
+}
+.alfabeto{
+    position: relative;
+    width: 50vw;
+    height: 20vw;
+    padding: 1rem;
+    top: 2.5vh;
+    left: -7vw;
+    color: #fff;
+    background: #000;
+    border-radius: 1rem;
+    text-align: center;
+    word-break: break-all;
+}
+p{
+    position: relative;
+    left: -7vw;
+}
+input{
+    height: 3rem;
+    text-align: center;
+    border: none;
+    background-color: #000;
+    color: springgreen;
+}
+button{
+    height: 3.3rem;
+    border: none;    
+    font-family: sans-serif;
+}
+#bt1{
+    margin-left: 3rem;
+    background-color: #5cb85c;
+}
+#bt2{
+    background-color: #d9534f;
+}
+#cripto{
+    color: #ffd700;
+}
+#chave{
+    color: #0000ff;
+}
