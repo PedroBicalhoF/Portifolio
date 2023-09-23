@@ -1,6 +1,5 @@
 body{
     background: #333;
-    background-size: contain;
 }
 .area{
     position: absolute;
@@ -9,16 +8,25 @@ body{
 }
 .alfabeto{
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 50vw;
     height: 20vw;
-    padding: 1rem;
+    padding: 2rem;
     top: 2.5vh;
     left: -7vw;
     color: #fff;
     background: #000;
     border-radius: 1rem;
-    text-align: center;
-    word-break: break-all;
+}
+figure{
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    opacity: 0;
 }
 p{
     position: relative;
@@ -29,12 +37,17 @@ input{
     text-align: center;
     border: none;
     background-color: #000;
-    color: springgreen;
 }
 button{
     height: 3.3rem;
     border: none;    
     font-family: sans-serif;
+}
+#entrada{
+    color: #fff;
+}
+#resultado{
+    color: #5cb85c;
 }
 #bt1{
     margin-left: 3rem;
@@ -43,9 +56,11 @@ button{
 #bt2{
     background-color: #d9534f;
 }
-#cripto{
-    color: #ffd700;
+h1{
+    color: #fff;
+    margin: .3rem;
 }
-#chave{
-    color: #0000ff;
+h2{
+    color: #5cb85c;
+    margin: .3rem;
 }
