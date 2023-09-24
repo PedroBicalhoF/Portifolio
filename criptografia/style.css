@@ -10,10 +10,10 @@ body{
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: bottom;
+    overflow-y: scroll;
     width: 50vw;
-    height: 20vw;
-    padding: 2rem;
+    height: 30vw;
     top: 2.5vh;
     left: -7vw;
     color: #fff;
@@ -49,18 +49,17 @@ button{
 #resultado{
     color: #5cb85c;
 }
-#bt1{
-    margin-left: 3rem;
-    background-color: #5cb85c;
-}
 #bt2{
+    margin-left: 3rem;
+    padding: 1rem;
+    font-weight: 600;
     background-color: #d9534f;
 }
-h1{
+h3{
     color: #fff;
     margin: .3rem;
 }
-h2{
+h4{
     color: #5cb85c;
     margin: .3rem;
 }
