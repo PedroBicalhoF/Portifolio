@@ -37,7 +37,6 @@ function Calcular(){
     }
     numero = numero.join('');
     saida.value = numero;
-    console.log(abc[221])
 }
 
 function revelar(){
@@ -47,11 +46,6 @@ function revelar(){
         chave.style.opacity = '0';
         return
     }
-    else{
-        bt_2.innerHTML = 'Ocultar';
-        texto.type='text';
-        chave.style.opacity = '1';
-    }
     
     window.alert('Nivel de Acesso Exigido')
     senha = prompt('Digite a senha: ')
@@ -59,14 +53,15 @@ function revelar(){
     if(senha=='criptografia'){
         texto.type = 'text';
         bt_2.innerHTML = 'Ocultar';
+        chave.style.opacity = '1';
         return
     }
     else{
         alert('Acesso Negado');
+        texto.type = 'password';
         chave.style.opacity = '0';
         return
     }
-    
 }
 
 function criptografar(v) {//Durstenfeld shuffle algorithm 
