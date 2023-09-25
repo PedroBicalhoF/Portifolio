@@ -63,6 +63,7 @@ function revelar(){
     }
     else{
         alert('Acesso Negado');
+        chave.style.opacity = '0';
         return
     }
     
