@@ -1,32 +1,92 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Document</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="ps_css.css">
+   <title>Document</title>
 </head>
 <body>
-    <header></header>
-    <div>
-        <table>
-            <tr>
-            <td onclick="marcar(0)"></td>
-            <td onclick="marcar(1)"></td>
-            <td onclick="marcar(2)"></td>
-        </tr>
-        <tr>
-            <td onclick="marcar(3)"></td>
-            <td onclick="marcar(4)"></td>
-            <td onclick="marcar(5)"></td>
-        </tr>
-        <tr>
-            <td onclick="marcar(6)"></td>
-            <td onclick="marcar(7)"></td>
-            <td onclick="marcar(8)"></td>
-        </tr>
-    </table>
-</div>
+<!-- primeira parte: header e referencias-->
+    <header>
+        <h1><a href="#tp">Pedro</a></h1>
+        <a href="#pj">Projetos</a>
+        <a href="#hb">Habilidades</a>
+        <a href="#ct">Contato</a>
+    </header>
+    
+<!-- segunda parte: texto introdutorio-->
+    <div id="tp" class="container">
+        <h1>
+            Este é um projeto pessoal que desenvolvi para mostrar um pouco dos meus conhecimentos e
+            aprendizados ao longo do caminho, comecei meus estudos na área de programação em 2020
+            em um curso técnico que fiz em conjunto com meu ensino médio onde me apaixonei pela área de
+            tecnologia. O intuito desse site é mostrar um pouco do meu conhecimento atual.    
+        </h1>
+    </div>
+  
+<!-- terceira parte: projetos front-end -->
+    <h2 id="pj"><ins>Meus Projetos</ins></h2>
+    <div class="projetos">
+            <section style="background: #d9534f;">
+                <a href="calculadora/calculadora.html" target="_blank">Calculadora</a>
+            </section> 
+            <section style="background: #ffd700;">
+                <a href="tictactoe/index.html" target="_blank">TicTacToe</a>
+            </section>
+            <section style="background: #2e8b57;">
+                <a href="criptografia/index.html" target="_blank">Criptografia</a>
+            </section> 
+            <section style="background: #f0ad4e;">
+                <a href="conversora/conversora.html" target="_blank">Conversor</a>
+            </section> 
+            <section style="background: #0000ff;">
+                <a href="cronometro/cronometro.html" target="_blank">Cronometro</a>
+            </section> 
+            <section style="background: #8b4513;">
+                <a href="animacao/animacao.html" target="_blank">Movimento</a>
+            </section>
+            <section style="background: #5bc0de;">
+                <a href="relogio/relogio.html" target="_blank">Relogio</a>
+            </section>
+    </div>
+
+    <!-- quarta parte: linguagens que estudei-->
+    <h2 id="hb"><ins>Meus conhecimentos</ins></h2>
+    <div class="habilidades">
+        <div>
+            <section>Java</section> 
+            <section>C++</section> 
+            <section>C#</section>
+            <section>Html</section>
+            <section>Css</section> 
+            <section>Jscript</section> 
+            <section>Python</section>
+            <section>MySql</section>
+            <section>Office</section>
+            <section>Ingles</section>    
+        </div>
+    </div>
+    
+<!-- rodape: creditos finais -->
+    <footer class="contato" id="ct">
+        <ins>
+            <a href="mailto:<nowiki>pedrobicalho205@gmail.com?subject=link HTML" target="_blank">
+                <img src="gmail.jpg">Gmail
+            </a>
+        </ins>
+
+        <ins>
+            <a href="https://github.com/PedroBicalhoF/Portifolio" target="_blank">
+                <img src="gh.png">Github
+            </a>
+        </ins>
+
+        <ins>
+            <a href="https://www.linkedin.com/in/pedro-bicalho-079b41291/" target="_blank">
+                <img src="linkedin.png">Linkedin
+            </a>
+        </ins>
+    </footer>
 </body>
-<script src="script.js"></script>
 </html>
