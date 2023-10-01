@@ -93,7 +93,7 @@ function analise(){
         texto.innerHTML = `<h1>Win ${bt[0].innerHTML}</h1>`;
         texto.style.fontSize = '2rem';
     }
-    else if((bt[2].innerHTML == bt[4].innerHTML && bt[2].innerHTML == bt[6].innerHTML)&&bt[7].innerHTML!=''){
+    else if((bt[2].innerHTML == bt[4].innerHTML && bt[2].innerHTML == bt[6].innerHTML)&&bt[6].innerHTML!=''){
         fim = true;
         bt[2].style.opacity = '.3';
         bt[4].style.opacity = '.3';
