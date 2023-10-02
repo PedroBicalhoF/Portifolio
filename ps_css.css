@@ -213,6 +213,7 @@ footer img{
     }
     .projetos{
         height: 44vh;
+        overflow: scroll; 
     }
     .projetos section{
         width:  100%;
@@ -296,6 +297,7 @@ footer img{
         display: flex;
         justify-content: center;
         align-items: center;
+        overflow: scroll;
     }
     .projetos section{
         border: gold 1px solid;
