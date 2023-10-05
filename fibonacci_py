@@ -1,0 +1,17 @@
+#serie fibonacci
+def laco(n):
+    a = 0
+    b = 0
+    c = 1
+    for i in range(n+1):
+        print(c)
+        a = b
+        b = c
+        c = a+b
+
+
+n = int(input('Digite ate que casa quer da serie fibonacci: '))
+if not str(n).isdigit():
+    print('Valor invalido')
+else:
+    laco(n)
