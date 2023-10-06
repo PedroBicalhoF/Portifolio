@@ -174,4 +174,5 @@ texto = ''
 while texto != 'SAIR':
     texto = input('Digite o tipo(binario,decimal...)/Sair para encerrar: ')
     tipo(texto.upper())
+    texto = texto.upper()
     print('')
