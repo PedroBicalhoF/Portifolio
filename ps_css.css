@@ -1,4 +1,4 @@
-/* referente ao html */
+ /* referente ao html */
 *{
     margin: 0;
     padding: 0;
@@ -49,7 +49,6 @@ a{
 .container{
     width: 100%;
     height: 80vh;
-    font-size: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,6 +58,7 @@ a{
     cursor: pointer;
 }
 .container section:first-child{
+    width: 50%;
     height: 80vh;
     padding: 3rem;
     display: flex;
@@ -69,7 +69,9 @@ a{
     background: center url(fd.jpg) no-repeat;
     border-radius: 10%;
 }
-.container section img{
+.container section:last-child{
+    width: 15vw;
+    height: 20vw;
     border: #fff 10px double;
     border-radius: 10%;
 }
@@ -109,7 +111,7 @@ a{
     background-color: #353535;
     border-radius: 5px;
     font-family: crono;
-    font-size: 1.4vw;
+    font-size: 1.5vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -125,13 +127,13 @@ a{
     position: relative;
     top: -20%;
     color: #bfbfbf;
-    font-size: .7rem;
+    font-size: .7vw;
     font-family: sans-serif;
     content: 'Ver Site.';
 }
 .projetos section button{
-    width: 10px;
-    height: 10px;
+    width: 1vw;
+    height: 1vw;
     margin: 0 3%;
     background-color: orange;
     border: none;
@@ -199,10 +201,11 @@ a{
 }
 /* 4º parte:sub div */
 .habilidades figure{
-    width: 30%;
-    height: 450px;
+    width: 20vw;
+    height: 35vw;
     padding: 2.5rem;
     margin: 0 1rem;
+    font-size: 1.4vw;
     font-family: crono;
     color: #bfbfbf;
     background: #333;
@@ -215,6 +218,8 @@ a{
     flex-direction: column;
 }
 .habilidades figure img{
+    width: 2.5vw;
+    height: 2.5vw;
     margin: .3rem;
 }
 .habilidades figure:first-child section:hover::after{
@@ -228,13 +233,13 @@ a{
 }
 /*4 parte: classes */
 .habilidades figure section{
-    width:  144px;
-    height: 225px;
+    width:  14.4vw;
+    height: 22.5vw;
     padding: 5% 10%;
     border: #fff 1px solid;
     border-radius: 5px;
     font-family: sans-serif;
-    font-size: .8rem;
+    font-size: 1vw;
     margin: .5rem;
     text-align: center;
     display: flex;
@@ -276,149 +281,4 @@ footer img{
 @font-face{
     font-family: crono;
     src: url(digital-7\ \(mono\ italic\).ttf);
-}
-@media (max-width: 768px){
-    h1{
-        font-size: 2vw;
-    }
-    header{
-        position: fixed;
-        width: 100%;
-        height: 5.625rem;
-        padding: 8px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    header h1{
-        font-size: 1rem;
-    }
-    header h1 a{
-        color: #fff;
-    }
-    header a{
-        font-size: 1rem;
-        padding: 0px;
-        color: #d3d3d3;
-    }
-    .container section:last-child{
-        width: 17vh;
-        height: 17vh;
-        background: center url(foto.jpg) no-repeat;
-        background-size: cover;
-        border: #fff 1px solid;
-        border-radius: 50%;
-        box-shadow: #fff -5px 5px 10px;
-    }
-    #pj{
-        height: 12vh;
-    }
-    .projetos{
-        height: 44vh;
-        display: flex;
-        justify-content: left;
-        align-items: center;
-        overflow: scroll;
-    }
-    .projetos section{
-        width:  100%;
-        height: 15vh;
-        font-size: 0.7rem;
-        margin: 1%;
-    }
-    #hb{
-        height: 11vh;
-    }
-    /* 4º parte:sub div */
-    .habilidades{
-        width: 100%;
-        height: 36vh;
-    }
-    .habilidades div{
-        width: 100%;
-        height: 200px;
-        margin: 5vw;
-        padding: 4px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        overflow: scroll;
-    }
-    /*4 parte: classes */
-    .habilidades section{
-        width: auto;
-        height: 20vh;
-        padding: 8%;
-        font-size: 1rem;
-        margin: 2%;
-    }
-    footer{
-        width: 100%;
-        height: 5.625rem;
-        padding: 2rem;
-        background: #333;
-        box-shadow: inset 0 1px 10px #000;
-        color: #fff;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    /* rodape: classe */
-    footer img{
-        width: 5vw;
-        height: 5vw;
-        border-radius: 50%;
-        transform: translateY(30%);
-    }
-}
-@media (max-width: 500px) {
-    h1{
-        font-size: 2vw;
-    }
-    h4{
-        font-size: 3vw;
-    }
-    header{
-        position: fixed;
-        width: 98vw;
-        height: 5.625rem;
-        padding: 8px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    header h1{
-        font-size: .8rem;
-    }
-    header a{
-        font-size: .8rem;
-    }
-    .container section:first-child{
-        height: 80vh;
-        padding: 1rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        text-align: left;
-        background: center url(fd.jpg) no-repeat;
-        border-radius: 10%;
-    }
-    #pj{
-        width: 98vw;
-    }
-    .projetos{
-        background: #000;
-        width: 98vw;
-        height: 44vh;
-        background: #333;
-        display: flex;
-        justify-content: left;
-        align-items: center;
-        overflow: scroll;
-    }
-    .projetos section{
-        border: gold 1px solid;
-    }
 }
