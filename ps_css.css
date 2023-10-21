@@ -69,7 +69,7 @@ a{
     background: center url(fd.jpg) no-repeat;
     border-radius: 10%;
 }
-.container section:last-child{
+.container section:last-child img{
     width: 15vw;
     height: 20vw;
     border: #fff 10px double;
