@@ -70,6 +70,8 @@ a{
     border-radius: 10%;
 }
 .container section:last-child img{
+    width: 20vw;
+    height: 25vw;
     border: #fff 10px double;
     border-radius: 10%;
 }
