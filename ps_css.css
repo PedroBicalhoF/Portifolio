@@ -155,7 +155,7 @@ a{
     content: '';
     position: absolute;
     top: 5%;
-    left: -109%;
+    left: -112%;
     width: 115px;
     height: 256px;
     background: linear-gradient(90deg,transparent,#fff,transparent);
@@ -221,8 +221,8 @@ a{
     flex-direction: column;
 }
 .habilidades figure img{
-    width: 32px;
-    height: 32px;
+    width: 25px;
+    height: 25px;
     margin: .3rem;
 }
 .habilidades figure:first-child section:hover::after{
