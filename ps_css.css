@@ -157,7 +157,7 @@ a{
     top: 5%;
     left: -100%;
     width: 100px;
-    height: 256px;
+    height: 246px;
     background: linear-gradient(90deg,transparent,#fff,transparent);
     border-radius: 50%;
     transition: .5s;
