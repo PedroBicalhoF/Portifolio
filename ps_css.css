@@ -155,8 +155,8 @@ a{
     content: '';
     position: absolute;
     top: 5%;
-    left: -112%;
-    width: 115px;
+    left: -109%;
+    width: 100px;
     height: 256px;
     background: linear-gradient(90deg,transparent,#fff,transparent);
     border-radius: 50%;
