@@ -77,10 +77,10 @@ a{
 }
 /*1º h2:meus projetos */
 #pj{
+    height: 24vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 24vh;
     background: #333;
     color: #fff;
 }
@@ -284,23 +284,62 @@ footer img{
     font-family: crono;
     src: url(digital-7\ \(mono\ italic\).ttf);
 }
-/* @media (max-width: 768px){
-    .container{
-
+@media (max-width: 500px){
+    *{
+        font-size: 10px;
+    }
+    #pj{
+        height: 115px;
     }
     .projetos{
-
+        height: 50%;
+    }
+    .projetos figure{
+        width: 80%;
+        margin-bottom: 10%;
+        display: flex;
+        justify-content: space-around;
+        align-items: left;
+    }
+    .projetos section a:before{
+        width: 72px;
+        height: 109px;
+        position: absolute;
+        top: 15%;
+        left: -90%;
+        border-radius: 0;
     }
     .projetos section{
-
+        width: 72px;
+        height: 109px;
+    }
+    .projetos section:hover::after{
+        text-shadow: 5px 0 5px #333;
+    }
+    .projetos section a:after{
+        opacity: 0;
+    }
+    #hb{
+        height: 113px;
     }
     .habilidades{
-
+        height: 50%;
+        display: flex;
+        justify-content: space-around;
+        align-items: left;
+        margin-bottom: 10%;
     }
     .habilidades figure{
-
+        width: 128px;
+        height: 224px;
     }
-    .habilidade figure section{
-        
+    .habilidades figure section{
+        width: 72px;
+        height: 113px;
+        padding: 2.5% 5%;
     }
-} */
+    .habilidades figure img{
+        width: 13px;
+        height: 13px;
+    }
+}
