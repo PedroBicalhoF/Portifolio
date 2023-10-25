@@ -334,16 +334,16 @@ footer img{
         margin-bottom: 10%;
     }
     .habilidades figure{
-        width: 128px;
-        height: 224px;
+        width: 115px;
+        height: 202px;
     }
     .habilidades figure section{
-        width: 72px;
-        height: 113px;
-        padding: 2.5% 5%;
+        width: 65px;
+        height: 102px;
+        padding: 2.25% 4.5%;
     }
     .habilidades figure img{
-        width: 13px;
-        height: 13px;
+        width: 12px;
+        height: 12px;
     }
 }
