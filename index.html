@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -18,13 +19,14 @@
     </header>
 
     <!-- segunda parte: texto introdutorio-->
+    <div id="particles-js"></div>
+    
     <div class="container">
         <section id="sec">
-            <h1 id="txt">Pedro Bicalho</h1><br>
-            <h4>👩🏻‍💻Desenvolvimento Web e Interfaces.<br> 🎓Cursando Engenharia de Software.<br> 🧠Interesse em desenvolvimento front-end e back-end.<br> 🔎Buscando oportunidade na area de desenvolvimento.
-                <h4>
+            <h1 id="txt">Sobre mim</h1><br>
+            <h4><h4>
         </section>
-
+        
         <section>
             <img src="foto.jpg">
         </section>
@@ -34,64 +36,56 @@
     <h2 id="pj"><ins>Meus Projetos</ins></h2>
     <div class="projetos">
         <figure>
-            <section style="background: #272727;">
-                <span></span>
-                <a href="lista_tarefa/index.html" target="_blank">
+            <section>
+                <a href="tictactoe/index.html" target="_blank">
                     <button></button><button></button><button></button>    
-                    To-Do-List
+                    TicTacToe
                 </a>
-
+                
             </section>
-            <section style="background: #272727;">
-                <span></span>
-                <a href="calculadora/calculadora.html" target="_blank">
-                    <button></button><button></button><button></button>    
-                    Calculadora
-                </a>
-
-            </section>
-            <section style="background: #272727;">
-                <span></span>
-                <a href="criptografia/index.html" target="_blank">
-                    <button></button><button></button><button></button>    
-                    Criptografia
-                </a>
-
-            </section>
-            <section style="background: #272727;">
-                <span></span>
+            <section>
                 <a href="conversora/conversora.html" target="_blank">
                     <button></button><button></button><button></button>    
                     Conversor
                 </a>
 
             </section>
-            <section style="background: #272727;">
-                <span></span>
+            <section>
+                <a href="calculadora/calculadora.html" target="_blank">
+                    <button></button><button></button><button></button>    
+                    Calculadora
+                </a>
+                
+            </section>
+            <section>
+                <a href="criptografia/index.html" target="_blank">
+                    <button></button><button></button><button></button>    
+                    Criptografia
+                </a>
+
+            </section>
+            <section>
+                <a href="lista_tarefa/index.html" target="_blank">
+                    <button></button><button></button><button></button>    
+                    To-Do-List
+                </a>
+
+            </section>
+            <section>
                 <a href="cronometro/cronometro.html" target="_blank">
                     <button></button><button></button><button></button>    
                     Cronometro
                 </a>
 
             </section>
-            <section style="background: #272727;">
-                <span></span>
-                <a href="tictactoe/index.html" target="_blank">
-                    <button></button><button></button><button></button>    
-                    TicTacToe
-                </a>
-
-            </section>
-            <section style="background: #272727;">
-                <span></span>
+            <section>
                 <a href="relogio/relogio.html" target="_blank">
                     <button></button><button></button><button></button>    
                     Relogio-Dg
                 </a>
 
             </section>
-            <section style="background: #272727;">
-                <span></span>
+            <section>
                 <a href="animacao/animacao.html" target="_blank">
                     <button></button><button></button><button></button>    
                     Movimento
@@ -160,21 +154,8 @@
 
     </footer>
     <script src="https://kit.fontawesome.com/94b5814408.js" crossorigin="anonymous"></script>
-    <script>
-        container = document.getElementsByClassName('container')[0];
-        bio = document.getElementById('sec');
-        foto = document.getElementsByTagName('section')[1];
-        texto = document.getElementById('txt');
-        logo = document.getElementsByTagName('h4')[0];
-        bio.onclick = () => {
-            container.style.justifyContent = 'space-around';
-            texto.innerHTML = "Este é um projeto pessoal que desenvolvi para mostrar um pouco dos meus conhecimentos e aprendizados ao longo do caminho, comecei meus estudos na área de programação em 2020 em um curso técnico que fiz em conjunto com meu ensino médio onde optei pela área de tecnologia. O intuito desse site é mostrar um pouco do meu conhecimento atual."
-            logo.innerHTML = `<i class="fa-solid fa-desktop fa-sm" style="color: #fff;"></i>`;
-            logo.style.fontSize = '10vw';
-            logo.style.marginLeft = '-10%';
-            bio.style.animation = 'reveal 2s ease-in forwards'
-        }
-    </script>
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
