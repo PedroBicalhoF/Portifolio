@@ -6,16 +6,12 @@
     font-family: crono;
     src: url(digital-7\ \(mono\ italic\).ttf);
 }
-body{
-    background: #000;
-}
-
 div{
     width: 400px;
     height: 400px;
     margin: auto;
     margin-top: 15%;
-    border: 1px #fff solid;
+    border: #000 1px solid;
     border-radius: 10px;
     text-align: center;
 }
@@ -25,7 +21,6 @@ h1{
     letter-spacing: 5px;
     font-size: 3.5rem;
     font-family: crono;
-    color: #65b307;
 }
 
 button{
@@ -35,22 +30,21 @@ button{
     font-family: crono;
     font-size: 1.5rem;
     cursor: pointer;
-    border: #fff 1px solid;
+    border: #000 1px solid;
 }
 button:hover{
     transition: 0.1s;
-    color: #fff;
-    background: #00000000;
+    transform: translateY(-10px);
 }
 
 .i{
-    background-color: #65b307;
+    background-color: green;
 }
 
 .p{
-    background-color: #bfbfbf;
+    background-color: gray;
 }
 
 .z{
-    background-color: coral;
+    background-color: orange;
 }
