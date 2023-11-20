@@ -3,6 +3,11 @@
   font-family: crono;
   src: url(digital-7\ \(mono\ italic\).ttf);
 }
+@keyframes zoom{
+  0%{background-size: 100%;}
+  50%{background-size: 70%;}
+  100%{background-size: 100%;}
+}
 /* referente ao html */
 * {
   margin: 0;
@@ -15,10 +20,7 @@
 body {
   background: #000;
 }
-body h1 {
-  color: #fff;
-}
-body h4 {
+h4 {
   color: #bfbfbf;
 }
 
@@ -33,7 +35,7 @@ header {
   padding: 1rem;
   font-size: 1rem;
   z-index: 1;
-  background-color: #000;
+  background-color: #272727;
   box-shadow: inset 0 0 2px #fff;
 }
 header h1 {
@@ -129,29 +131,18 @@ header a {
   margin: 0.5rem;
   padding: 1% 3%;
   opacity: 0.7;
-  background-color: #272727;
+  background-color: #000;
+  border: #000 5px solid;
   border-radius: 8px;
   font-family: crono;
   font-size: 1.1rem;
   flex-wrap: wrap;
   overflow: hidden;
 }
-
 .projetos section:hover {
   transition: 0.3s;
-  opacity: 1;
   transform: translateY(-10px);
 }
-
-.projetos section:hover::after {
-  position: relative;
-  top: -20%;
-  color: #bfbfbf;
-  font-size: 0.7rem;
-  font-family: sans-serif;
-  content: "Ver Site.";
-}
-
 .projetos section button {
   width: 10px;
   height: 10px;
@@ -172,18 +163,6 @@ header a {
 }
 
 /* 3ºparte: id dos link */
-.projetos section a:before {
-  content: "";
-  opacity: 0.9;
-  position: absolute;
-  top: 5%;
-  left: -115%;
-  width: 115px;
-  height: 256px;
-  background: linear-gradient(90deg, transparent, #fff, transparent);
-  border-radius: 50%;
-  transition: 0.5s;
-}
 
 .projetos section a {
   display: flex;
@@ -195,18 +174,28 @@ header a {
   top: -20%;
   flex-wrap: wrap;
 }
-
-.projetos section a:after {
-  content: "";
-  opacity: 0.9;
+.projetos section:hover a{
+  text-shadow: #000 2px 2px 0;
+}
+.projetos section a:after{
+  content: '';
   position: absolute;
-  top: 5%;
-  left: 100%;
-  width: 115px;
-  height: 256px;
-  background: linear-gradient(90deg, transparent, #fff, transparent);
-  border-radius: 50%;
-  transition: 0.5s;
+  width: 134px;
+  height: 230px;
+  top: 20px;
+  left: -20px;
+  right: -2px;
+  bottom: -2px;
+  transform: skew(25deg,10deg);
+  border-radius: 0px;
+  background: #333;
+  z-index: -1;
+}
+.projetos section:hover a:after{
+  transition: .7s;
+  left: -22px;
+  background: linear-gradient(90deg,#000 50%,#333 50%);
+  transform: skew(0deg,0deg);
 }
 
 /* 2º h2: meus conhecimentos */
@@ -228,6 +217,7 @@ header a {
   padding: 0 4rem;
   background: url(fundo.png);
   background-position: center;
+  animation: zoom 3s infinite ease-in alternate;
 }
 
 /* 4º parte:sub div */
@@ -239,10 +229,11 @@ header a {
   height: 448px;
   padding: 2.5rem;
   margin: 0 1rem;
+  text-align: center;
   font-size: 1rem;
   font-family: crono;
   color: #bfbfbf;
-  background: #333;
+  background: linear-gradient(90deg,#333,#1a1a1a);
   border: #fff 1px solid;
   border-radius: 5px;
   filter: brightness(0.8);
@@ -255,16 +246,16 @@ header a {
   margin: 0.3rem;
 }
 
-.habilidades figure:first-child section:hover::after {
-  content: "Python, Java, C++,C#,MySql, HTML / CSS e JavaScript";
+.habilidades figure:first-child:hover:after {
+  content: "Python, Java, C++, C#, MySql, HTML, CSS e JavaScript";
 }
 
-.habilidades figure:nth-child(2) section:hover::after {
-  content: "Python, MySql, HTML / CSS e JavaScript.";
+.habilidades figure:nth-child(2):hover:after {
+  content: "Python, MySql, HTML, CSS e JavaScript.";
 }
 
-.habilidades figure:last-child section:hover::after {
-  content: "Python, Java, C++, C-sharp e MySql.";
+.habilidades figure:last-child:hover::after {
+  content: "Python, Java, C++, C# e MySql.";
 }
 
 /*4 parte: classes */
@@ -275,6 +266,7 @@ header a {
   width: 144px;
   height: 225px;
   padding: 5% 10%;
+  background: linear-gradient(90deg,#272727,#333);
   border: #fff 1px solid;
   border-radius: 5px;
   font-family: sans-serif;
