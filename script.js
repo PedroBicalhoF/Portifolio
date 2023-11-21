@@ -5,7 +5,6 @@ container = document.getElementsByClassName('container')[0];
         texto =  document.getElementsByTagName('h4')[0];
         bio.onmouseenter = () => {
           setTimeout (() => {
-            bio.style.background = "#000";
             nome.innerHTML = "Pedro Bicalho";
             texto.innerHTML = `👩🏻‍💻Desenvolvimento Web e Interfaces.<br> 🎓Cursando Engenharia de Software.<br> 🧠Interesse em desenvolvimento front-end e back-end.<br> 🔎Buscando oportunidade na area de desenvolvimento.`;
           },"500");
@@ -23,13 +22,13 @@ particlesJS("particles-js", {
         }
       },
       "color": {
-        "value": "#fff"
+        "value": "#f00"
       },
       "shape": {
         "type": "circle",
         "stroke": {
           "width": 1,
-          "color": "#0000ff"
+          "color": "#f00"
         },
         "polygon": {
           "nb_sides": 5
@@ -124,17 +123,3 @@ particlesJS("particles-js", {
     "retina_detect": true
   });
   
-  
-  /* ---- stats.js config ---- */
-  
-  var count_particles,update;
-
-  document.body.appendChild(stats.domElement);
-  count_particles = document.querySelector('.js-count-particles');
-  update = function() {
-    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
-      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
-    }
-    requestAnimationFrame(update);
-  };
-  requestAnimationFrame(update);
