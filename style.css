@@ -185,7 +185,8 @@ header a {
 }
 .projetos section:hover a:after{
   transition: .7s;
-  left: -30px;
+  width: 200px;
+  left: -65px;
   background: linear-gradient(90deg,#000 50%,#333 50%);
   transform: skew(0deg,0deg);
 }
@@ -320,6 +321,10 @@ footer img {
     height: 115px;
     top: 8px;
     left: -15px;
+  }
+  .projetos section:hover a:after {
+    width: 100px;
+    left: -30px;
   }
   .projetos section {
     width: 72px;
