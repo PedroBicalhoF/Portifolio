@@ -18,6 +18,7 @@ table{
     border: #fff 1px solid;
     margin: 0% 5%;
     cursor: pointer;
+    background: #000;
 }
 td{
     width: 2px;
