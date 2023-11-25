@@ -1,39 +1,35 @@
 var quadro = document.getElementsByTagName('table')[0];
 var cor = document.getElementsByTagName('input')[0];
-var icone = document.getElementById('balde');
-var visao = document.getElementById('olho');
+var balde = document.getElementById('balde');
 var borracha = document.getElementById('borracha');
 var fundo = cor.value;
 var cor_atual;
 var cor_nova;
 var tamanho = prompt('Digite o tamanho(10-50)');
+var habilitar = true;
 
 if(tamanho<10 || tamanho>50){
     tamanho = 10;
 }
 
-visao.onclick = () => {
-    if(visao.className == "fa-regular fa-eye"){
-        quadro.style.visibility = 'hidden';
-        visao.className = "fa-regular fa-eye-slash"; 
-    }
-    else{
-        quadro.style.visibility = 'visible'; 
-        visao.className = "fa-regular fa-eye";
-    }
-}
-
 borracha.onclick = () =>{
     fundo = "#ffffff";
+    balde.style.color = fundo;
+    cor.value = fundo;
+    habilitar = false;
 }
 
 cor.onchange = () =>{
+    habilitar = true;
     fundo = cor.value;
-    icone.style.color = fundo;
+    balde.style.color = fundo;
 }
 
-icone.onclick = () =>{
-    limpar();
+balde.onclick = () =>{
+    if(habilitar){
+        quadro.style.background = cor.value;
+        limpar();
+    }
 }
 
 for(x=0;x<tamanho;x++){//td
