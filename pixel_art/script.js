@@ -1,4 +1,5 @@
 var quadro = document.getElementsByTagName('table')[0];
+var baixar = document.getElementsByTagName('a')[0];
 var cor = document.getElementsByTagName('input')[0];
 var balde = document.getElementById('balde');
 var borracha = document.getElementById('borracha');
@@ -8,8 +9,15 @@ var cor_nova;
 var tamanho = prompt('Digite o tamanho(10-50)');
 var habilitar = true;
 
+var tela;
+
 if(tamanho<10 || tamanho>50){
     tamanho = 10;
+}
+
+baixar.onclick = () =>{
+    tela = new Blob(["\ufeff" + quadro.outerHTML],{type: "text/html"});
+    baixar.href = window.URL.createObjectURL(tela);
 }
 
 borracha.onclick = () =>{
@@ -43,12 +51,12 @@ function criar(){
     
     for(y=0;y<tamanho;y++){
         let coluna = document.createElement('td');
-    
+        
         coluna.addEventListener('click',function (){
             cor_atual = fundo;
         })
-
-
+        
+        
         coluna.addEventListener('mouseenter',function (){
             cor_atual = coluna.style.background;
             coluna.style.background = fundo;
