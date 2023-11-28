@@ -9,16 +9,7 @@ body{
     display: flex;
     justify-content: left;
     align-items: center;
-    /* flex-direction: column; */
     background: linear-gradient(90deg,#333,#1a1a1a );
-}
-table{
-    width: 40%;
-    height: 50%;
-    border: #fff 1px solid;
-    margin: 0% 5%;
-    cursor: pointer;
-    background: #000;
 }
 td{
     width: 2px;
