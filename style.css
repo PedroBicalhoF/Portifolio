@@ -156,7 +156,7 @@ header a {
 
 /* 3ºparte: id dos link */
 
-.projetos section a {
+.secao_padrao a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -165,11 +165,9 @@ header a {
   position: relative;
   top: -20%;
   flex-wrap: wrap;
-}
-.projetos section:hover a{
   text-shadow: #000 2px 2px 0;
 }
-.projetos section a:after{
+.secao_padrao a:after{
   content: '';
   position: absolute;
   width: 134px;
@@ -183,14 +181,46 @@ header a {
   background: #333;
   z-index: -1;
 }
-.projetos section:hover a:after{
+.secao_padrao:hover a::after{
   transition: .7s;
   width: 200px;
   left: -65px;
   background: linear-gradient(90deg,#000 50%,#333 50%);
   transform: skew(0deg,0deg);
 }
-
+.secao_projeto a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: -20%;
+  flex-wrap: wrap;
+  color: #000;
+  text-shadow: #fff 1px 1px 0;
+}
+.secao_projeto a:after{
+  content: '';
+  position: absolute;
+  width: 134px;
+  height: 300px;
+  top: 16px;
+  left: -20px;
+  right: -2px;
+  bottom: -2px;
+  transform: skew(25deg,10deg);
+  border-radius: 0px;
+  background: #fff;
+  z-index: -1;
+}
+.secao_projeto:hover a::after{
+  transition: .7s;
+  width: 200px;
+  left: -65px;
+  background: linear-gradient(90deg,#f00 50%,#fff 50%);
+  transform: skew(0deg,0deg);
+}
 /* 2º h2: meus conhecimentos */
 #hb {
   display: flex;
