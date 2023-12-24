@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>relogio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="area">
+        <div class="area1">
+            <div class="rl">
+                <h1 id="hr">00</h1>
+                <h1 id="po">:</h1>
+                <h1 id="mi">00</h1>
+                <h1 id="po">:</h1>
+                <h1 id="ss">00</h1>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    const hora = document.getElementById('hr')
+    const minutos = document.getElementById('mi')
+    const segundos = document.getElementById('ss')
+    setInterval(relogio)
+
+    function relogio(){
+        let dia = new Date()
+        let h = dia.getHours()
+        let m = dia.getMinutes()
+        let s = dia.getSeconds()
+    
+        hora.innerHTML = h<10?'0'+h:h
+        minutos.innerHTML = m<10?'0'+m:m
+        segundos.innerHTML = s<10?'0'+s:s
+    }
+</script>
+</html>

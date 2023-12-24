@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.area{
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.area1{
+    width: 40vw;
+    height: 40vh;
+    background: #333;
+    border: #fff 1px solid;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rl{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    border: #fff 1px solid;
+    border-radius: 10px;
+    padding: 2%;
+    font-size: 2.5rem;
+    font-family: relogio;
+    text-shadow: 1px 0 #fff;
+    letter-spacing: 5px;
+}
+@font-face{
+    font-family: relogio;
+    src: url(digital-7\ \(mono\ italic\).ttf);
+}
