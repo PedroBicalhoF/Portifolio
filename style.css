@@ -15,6 +15,7 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   text-decoration: none;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   color: #fff;
 }
 body {
@@ -40,12 +41,11 @@ header {
 }
 header h1 {
   padding: 1rem;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   letter-spacing: 2px;
 }
 header a {
   padding: 1rem;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-shadow: #000 4px 2px;
   letter-spacing: 2px;
 }
 #particles-js {
@@ -62,7 +62,6 @@ header a {
   width: 100%;
   height: 80vh;
   margin-bottom: 10vh;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   letter-spacing: 2px;
   cursor: pointer;
   z-index: 2;
@@ -91,6 +90,7 @@ header a {
   height: 24vh;
   background: #333;
   border-top: #fff 1px solid;
+  text-shadow: #000 4px 2px;
   color: #fff;
 }
 
@@ -126,7 +126,6 @@ header a {
   background-color: #000;
   border: #000 5px double;
   border-radius: 8px;
-  font-family: crono;
   font-size: 1.1rem;
   flex-wrap: wrap;
   overflow: hidden;
@@ -227,6 +226,7 @@ header a {
   justify-content: center;
   align-items: center;
   height: 225px;
+  text-shadow: #000 4px 2px;
   color: #fff;
 }
 
@@ -253,8 +253,8 @@ header a {
   padding: 2.5rem;
   margin: 0 1rem;
   text-align: center;
-  font-size: 1rem;
   font-family: crono;
+  font-size: 1rem;
   color: #bfbfbf;
   background: linear-gradient(90deg,#333,#1a1a1a);
   border: #fff 1px solid;
@@ -292,7 +292,6 @@ header a {
   background: linear-gradient(90deg,#272727,#333);
   border: #fff 1px solid;
   border-radius: 5px;
-  font-family: sans-serif;
   font-size: 1rem;
   margin: 0.5rem;
   text-align: center;
@@ -314,7 +313,6 @@ footer {
   background-color: #272727;
   box-shadow: inset 0 1px 10px #000;
   color: #fff;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 /* rodape: classe */
