@@ -1,14 +1,16 @@
-let particles_value= 380;
-let color_value = '#f00';
-let shape_type = 'circle';
-let shape_width = 1;
-let shape_color = '#f00';
-let opacity_value = 0.5;
-let line_linked_opacity = 0;
-let move_speed = 3;
-let move_direction = 'top';
-let events_mode = 'grab';
-let bubble_size = 40;
+const modelo = {
+  particlesValue: 380,
+  colorValue : '#fff',
+  shapeType : 'circle',
+  shapeWidth : 1,
+  shapeColor : '#0f0',
+  opacityValue : 0.5,
+  lineOpacity : 0,
+  moveSpeed : 3,
+  moveDirection : 'top',
+  eventsMode : 'grab',
+  bubbleSize : 40
+}
 
 const container = document.getElementsByClassName('container')[0];
 const bio = document.getElementById('sec');
@@ -23,24 +25,24 @@ const dia = data.getDate();
 const mes = data.getMonth() + 1;
 
 if(( dia>=18 && dia<31) && mes==12){//edição natal
-    particles_value = 100;
-    color_value = '#fff';
-    shape_type = 'star';
-    shape_width = 5;
-    shape_color = '#ff0'
-    opacity_value = 0.17;
-    line_linked_opacity = 0.4;
-    move_speed = 6;
-    move_direction = 'none';
-    events_mode = 'bubble';
-    bubble_size = 10;
+    modelo.particlesValue = 100;
+    modelo.colorValue = '#fff';
+    modelo.shapeType = 'star';
+    modelo.shapeWidth = 5;
+    modelo.shapeColor = '#ff0'
+    modelo.opacityValue = 0.17;
+    modelo.lineOpacity = 0.4;
+    modelo.moveSpeed = 6;
+    modelo.moveDirection = 'none';
+    modelo.eventsMode = 'bubble';
+    modelo.bubbleSize = 10;
     enfeite()
 }
 
 bio.onmouseenter = () => {
           setTimeout (() => {
             bio.style.transition = '.5s';
-            bio.style.transform = 'translateY(-10%)';
+            bio.style.transform = 'translateY(-5%)';
             nome.innerHTML = "Pedro Bicalho";
             texto.innerHTML = `👩🏻‍💻Desenvolvimento Web e Interfaces.<br> 🎓Cursando Engenharia de Software.<br> 🧠Interesse em desenvolvimento front-end e back-end.<br> 🔎Buscando oportunidade na area de desenvolvimento.`;
           },"500");
@@ -51,20 +53,20 @@ bio.onmouseenter = () => {
 particlesJS("particles-js", {
     "particles": {
       "number": {
-        "value": particles_value,
+        "value": modelo.particlesValue,
         "density": {
           "enable": true,
           "value_area": 800
         }
       },
       "color": {
-        "value": color_value
+        "value": modelo.colorValue
       },
       "shape": {
-        "type": shape_type,
+        "type": modelo.shapeType,
         "stroke": {
-          "width": shape_width,
-          "color": shape_color
+          "width": modelo.shapeWidth,
+          "color": modelo.shapeColor
         },
         "polygon": {
           "nb_sides": 5
@@ -76,7 +78,7 @@ particlesJS("particles-js", {
         }
       },
       "opacity": {
-        "value": opacity_value,
+        "value": modelo.opacityValue,
         "random": false,
         "anim": {
           "enable": false,
@@ -99,13 +101,13 @@ particlesJS("particles-js", {
         "enable": true,
         "distance": 150,
         "color": "#fff",
-        "opacity": line_linked_opacity,
+        "opacity": modelo.lineOpacity,
         "width": 1  
       },
       "move": {
         "enable": true,
-        "speed": move_speed,
-        "direction": move_direction,
+        "speed": modelo.moveSpeed,
+        "direction": modelo.moveDirection,
         "random": false,
         "straight": false,
         "out_mode": "out",
@@ -122,7 +124,7 @@ particlesJS("particles-js", {
       "events": {
         "onhover": {
           "enable": true,
-          "mode": events_mode
+          "mode": modelo.eventsMode
         },
         "onclick": {
           "enable": true,
@@ -139,7 +141,7 @@ particlesJS("particles-js", {
         },
         "bubble": {
           "distance": 400,
-          "size": bubble_size,
+          "size": modelo.bubbleSize,
           "duration": 2,
           "opacity": 8,
           "speed": 3
