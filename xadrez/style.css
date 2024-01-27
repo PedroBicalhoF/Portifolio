@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1a1a1a;
+}
+table{
+    width: 500px;
+    height: 500px;
+    background-color: transparent;
+    border: #bfbfbf 10px solid;
+}
+td{
+    width: 61px;
+    height: 61px;
+    border: sienna 1px solid;
+}
