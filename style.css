@@ -48,6 +48,9 @@ header a {
   text-shadow: #000 4px 2px;
   letter-spacing: 2px;
 }
+header a:hover{
+  text-shadow: #fff 0 0 30px;
+}
 #particles-js {
   position: absolute;
   width: 100%;
@@ -81,7 +84,10 @@ header a {
   border: #fff 1px solid;
   background: linear-gradient(90deg,#1a1a1a,#333);
 }
-
+.container section:hover{
+  border: #fff 1px solid;
+  box-shadow: #00ffff 0 0 10px;
+}
 /*1º h2:meus projetos */
 #pj {
   display: flex;
