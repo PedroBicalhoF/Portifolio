@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    overflow-x: hidden;
+    background: #fff;
+    min-height: 100vh;
+}
+#pagina{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+#pagina #logo{
+    color: white;
+    text-shadow: #000 2px 2px 2px;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+#pagina ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#pagina ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+#pagina ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    text-shadow: #000 2px 2px 2px;
+    border-radius: 20px;
+}
+#pagina ul li a:hover,
+#pagina ul li a.active,
+#btn:hover{
+    background: #008000;
+    color: #fff;
+    text-shadow: none;
+}
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(paisagem.jpg);
+    background-size: cover;
+}
+section #text{
+    position: absolute;
+    top: 15%;
+    color: #fff;
+    text-shadow: #000 2px 2px 2px;
+    font-family: "Rancho", cursive;
+    font-size: 10vw;
+    text-align: center;
+    line-height: 0.55em;
+}
+section #text span{
+    font-size: 0.2em;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
+#btn{
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    background: #fff;
+    color:#094b65;
+    font-size: 1.2em;
+    font-weight: 500;
+    letter-spacing: 2px;
+    border-radius: 40px;
+    transform: translateY(200%);
+    z-index: 1;
+}
+.sec{
+    position: relative;
+    padding: 10%;
+    text-align: center;
+    background: #333;
+    color: #fff;
+    z-index: 2;
+}
+.sec h2{
+    font-size: 3.5em;
+    margin-bottom: 10px;
+}
+.sec article{
+    text-align: center;
+    margin: 2rem;
+}
+.sec aside{
+    margin-bottom: 5rem;
+}
+.sec p{    
+    font-size: 1em;
+} 
+.projetos {
+    width: 100%;
+    border-bottom: #fff 1px solid;
+}
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 24vh;
+    border-top: #fff 1px solid;
+    color: #333;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px;
+}
+.container .cartao{
+    position: relative;
+    width: 256px;
+    height: 352px;
+    box-shadow: inset 5px 5px 5px rgba(0,0,0,0.2),
+                inset -5px -5px 15px rgba(255, 255, 255,0.1),
+                5px 5px 15px rgba(0,0,0,0.3),
+                -5px -5px 15px rgba(255, 255, 255,0.1);
+    border-radius: 15px;
+    margin: 30px;
+    background: transparent;
+}
+.container .cartao::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    border-radius: 15px 0 0 15px;
+    background: transparent;
+}
+.container .cartao .folheto{
+    position: absolute;
+    width: 90%;
+    top: 16px;
+    left: 16px;
+    bottom: 16px;
+    background: #2a2b2f;
+    border-radius: 15px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+    transition: .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.container .cartao .folheto::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255,255,255,0.05);
+    pointer-events: none;
+}
+.container .cartao .folheto:hover{
+    transform: translateY(-50px);
+    box-shadow: 0 40px 70px rgba(0,0,0,0.5);
+}
+.container .cartao .folheto .conteudo {
+    padding: 20px;
+    text-align: center;   
+}
+.container .cartao .folheto .conteudo h2{
+    position: absolute;
+    top: -10px;
+    right: 30px;
+    font-size: 8em;
+    color: rgba(255,255,255,0.05);
+}
+.container .cartao .folheto .conteudo h3{
+    font-size: 1.8em;
+    color: rgba(255, 255, 255, 0.5);
+    z-index: 1;
+    transition: .5s;
+}
+.container .cartao .folheto .conteudo p{
+    font-size: 16px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.5);
+    z-index: 1;
+    transition: .5s;
+}
+.container .cartao .folheto .conteudo a{
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    background: green;
+    margin-top: 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 400;
+    color: #fff;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+.habilidades{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    top: 1rem;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.habilidades .titulo{
+    padding: 10% 0;
+    border: none;
+}
+.habilidades .skills{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;    
+}
+
+.habilidades .skills .secao{
+    width: 300px;
+    height: 300px;
+    box-shadow: inset 5px 5px 5px rgba(0,0,0,0.2),
+                inset -5px -5px 15px rgba(255, 255, 255,0.1),
+                5px 5px 15px rgba(0,0,0,0.3),
+                -5px -5px 15px rgba(255, 255, 255,0.1);
+    border-radius: 10px;
+    border: #000 1px solid;
+    margin: 5px;
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: .5s;
+}
+.habilidades .skills .secao:hover{
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 40px 70px rgba(0,0,0,0.5);
+}
+.habilidades .skills .secao h3{
+    margin: 2rem;
+    z-index: 1;
+}
+.habilidades .skills .secao p{
+    z-index: 1;
+}
+footer {
+    position: relative;
+    top: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    padding: 2rem;
+    background-color: #272727;
+    box-shadow: inset 0 1px 10px #000;
+}
+footer a{
+    text-decoration: none;
+    color: #fff;
+}
+footer img {
+    border-radius: 50%;
+    transform: translateY(30%);
+}
