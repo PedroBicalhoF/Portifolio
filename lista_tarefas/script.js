@@ -16,7 +16,7 @@ function criar(v){
     const botaoExcluir = document.createElement('button');
     const botoes= document.createElement('section');
     const tarefa = document.createElement('li');
-    const txt = v==0? nomeTarefa.value : v;
+    const txt = (v==0? nomeTarefa.value : v);
     
     if(!(txt)){return}
 
